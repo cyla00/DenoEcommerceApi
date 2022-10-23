@@ -1,0 +1,1 @@
+// deno run --allow-net --allow-env --allow-read --watch ./src/database/seed.ts

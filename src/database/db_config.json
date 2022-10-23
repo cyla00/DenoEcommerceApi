@@ -1,0 +1,10 @@
+{
+    "collections": [
+        "users",
+        "products",
+        "categories",
+        "tags",
+        "brands",
+        "feedback"
+    ]
+}
