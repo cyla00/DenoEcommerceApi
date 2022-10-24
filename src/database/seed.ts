@@ -13,21 +13,19 @@ export const db_build = async() => {
         console.log('db connected')
         const db = client.database(config().DB_NAME)
 
-        db_json.collections.forEach((element:string) => {
-            const collectionExists = db.listCollectionNames()
-
-            if(collectionExists === false){
-                db.createCollection(element)
-                console.log(`created collection ${element}`)
-            }
-
-        })
-
-        // const users = db.collection<UserSchema>('users')
-
+        for(const docs of db_json.collections){
+            await db.listCollectionNames().then(async (doc:string[]) => {
+                if(doc.includes(docs)) return
+                await db.createCollection(docs)
+                console.log(`created collection << ${docs} >>`)
+            })
+        }
+        console.log('all documents ok')
+        Deno.exit()
     }
-    catch(err:any){
-        console.log(err)
+    catch(err){
+        console.error(err)
+        Deno.exit()
     }
 }
 

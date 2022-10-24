@@ -5,6 +5,7 @@
         "categories",
         "tags",
         "brands",
-        "feedback"
+        "feedback",
+        "orders"
     ]
 }
