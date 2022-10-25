@@ -26,7 +26,7 @@ export interface UserSchema {
     lastName: string,
     email: string,
     password: string,
-    adresses: Array<object>,
+    adresses: Array<JSON>,
     createdAt: Timestamp,
     lastLogin: Timestamp,
     modifiedAt: Timestamp,

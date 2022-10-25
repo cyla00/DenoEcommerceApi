@@ -1,6 +1,8 @@
 {
     "collections": [
         "users",
+        "admin",
+        "roles",
         "products",
         "categories",
         "tags",

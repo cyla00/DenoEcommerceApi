@@ -1,7 +1,6 @@
 import { MongoClient } from 'https://deno.land/x/mongo@v0.31.1/mod.ts'
 import { config } from 'https://deno.land/x/dotenv@v3.2.0/mod.ts'
 import db_json from './db_config.json' assert { type: "json" }
-import { UserSchema, CategoriesSchema, TagSchema, ProductSchema } from './interfaces.ts'
 
 const client = new MongoClient()
 
