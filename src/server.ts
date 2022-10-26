@@ -17,7 +17,7 @@ app.use(registration.routes(), registration.allowedMethods()) // registration
 
 
 //protected routes
-
+app.use(jwtMiddleware)
 
 console.log(`http://${os.hostname()}:${config().SERVER_PORT}`)
 await app.listen({port: Number(config().SERVER_PORT)})

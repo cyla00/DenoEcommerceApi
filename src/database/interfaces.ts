@@ -1,4 +1,3 @@
-import { Timestamp } from "https://deno.land/x/web_bson@v0.2.5/mod.ts";
 
 // admin management
 export interface AdminSchema {
@@ -8,10 +7,10 @@ export interface AdminSchema {
     email: string,
     password: string,
     roleId: Array<string>,
-    createdAt: Timestamp,
-    lastLogin: Timestamp,
-    modifiedAt: Timestamp,
-    deletedAt: Timestamp,
+    createdAt: string,
+    lastLogin: string,
+    modifiedAt: string,
+    deletedAt: string,
 }
 
 export interface RoleSchema {
@@ -26,11 +25,11 @@ export interface UserSchema {
     lastName: string,
     email: string,
     password: string,
-    adresses: Array<JSON>,
-    createdAt: Timestamp,
-    lastLogin: Timestamp,
-    modifiedAt: Timestamp,
-    deletedAt: Timestamp,
+    adresses: Array<object>,
+    createdAt: string,
+    lastLogin: string,
+    modifiedAt: string,
+    deletedAt: string,
 }
 
 export interface OrderSchema {
@@ -38,8 +37,8 @@ export interface OrderSchema {
     userId: string,
     productId: string,
     quantity: number,
-    createdAt: Timestamp,
-    modifiedAt: Timestamp,
+    createdAt: string,
+    modifiedAt: string,
 }
 
 
@@ -52,39 +51,39 @@ export interface ProductSchema {
     brandId: string,
     tags: Array<string>,
     price: number,
-    createdAt: Timestamp,
-    modifiedAt: Timestamp,
-    deletedAt: Timestamp,
+    createdAt: string,
+    modifiedAt: string,
+    deletedAt: string,
 }
 
 export interface InventorySchema {
     id: string,
     quantity: number,
-    createdAt: Timestamp,
-    modifiedAt: Timestamp,
-    deletedAt: Timestamp,
+    createdAt: string,
+    modifiedAt: string,
+    deletedAt: string,
 }
 
 export interface CategoriesSchema {
     id: string,
     categoryName: string,
-    createdAt: Timestamp,
-    modifiedAt: Timestamp,
-    deletedAt: Timestamp,
+    createdAt: string,
+    modifiedAt: string,
+    deletedAt: string,
 }
 
 export interface TagSchema {
     id: string,
     tagName: string,
-    createdAt: Timestamp,
-    modifiedAt: Timestamp,
-    deletedAt: Timestamp,
+    createdAt: string,
+    modifiedAt: string,
+    deletedAt: string,
 }
 
 export interface BrandsSchema {
     id: string,
     brandName: string,
-    createdAt: Timestamp,
-    modifiedAt: Timestamp,
-    deletedAt: Timestamp,
+    createdAt: string,
+    modifiedAt: string,
+    deletedAt: string,
 }
