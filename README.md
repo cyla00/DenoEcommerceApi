@@ -1,5 +1,5 @@
 # DenoEcommerceApi
-## A generic E-commerce API made with the DENO runtime & mongoDb
+## A generic E-commerce API made with the DENO runtime, Typescript & mongoDb.
 
 ### env structure
 STATUS='development' # production <br><br>
